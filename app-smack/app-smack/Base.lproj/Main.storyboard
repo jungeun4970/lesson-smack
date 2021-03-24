@@ -34,13 +34,78 @@
                     <view key="view" contentMode="scaleToFill" id="gRM-yE-I0s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-PG-7FD" customClass="GradientView" customModule="app_smack" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fa-xc-grw">
+                                        <rect key="frame" x="20" y="30" width="80" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANNELS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5b-4t-Hoy">
+                                        <rect key="frame" x="20" y="70" width="79.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E85-y5-GhC">
+                                        <rect key="frame" x="312" y="68" width="22" height="22"/>
+                                        <state key="normal" image="addChannelButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4T-t0-agL">
+                                        <rect key="frame" x="20" y="718" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Edj-Or-8QR"/>
+                                            <constraint firstAttribute="width" constant="70" id="vea-BR-5go"/>
+                                        </constraints>
+                                        <state key="normal" image="menuProfileIcon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVk-vt-b3l">
+                                        <rect key="frame" x="115" y="738" width="41" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H67-JO-HA3">
+                                        <rect key="frame" x="0.0" y="110" width="414" height="588"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="K5b-4t-Hoy" firstAttribute="top" secondItem="3fa-xc-grw" secondAttribute="bottom" constant="10" id="62s-7w-0Rx"/>
+                                    <constraint firstItem="3fa-xc-grw" firstAttribute="top" secondItem="ggd-PG-7FD" secondAttribute="top" constant="30" id="Bcq-9J-DYZ"/>
+                                    <constraint firstItem="QVk-vt-b3l" firstAttribute="centerY" secondItem="R4T-t0-agL" secondAttribute="centerY" id="ERb-gc-d2e"/>
+                                    <constraint firstItem="H67-JO-HA3" firstAttribute="leading" secondItem="ggd-PG-7FD" secondAttribute="leading" id="Fc1-wF-lF8"/>
+                                    <constraint firstAttribute="bottom" secondItem="R4T-t0-agL" secondAttribute="bottom" constant="30" id="c9f-c0-wrs"/>
+                                    <constraint firstAttribute="trailing" secondItem="E85-y5-GhC" secondAttribute="trailing" constant="80" id="cqD-Sm-k1n"/>
+                                    <constraint firstItem="E85-y5-GhC" firstAttribute="centerY" secondItem="K5b-4t-Hoy" secondAttribute="centerY" id="eHe-zv-qI9"/>
+                                    <constraint firstItem="K5b-4t-Hoy" firstAttribute="leading" secondItem="3fa-xc-grw" secondAttribute="leading" id="eRe-vH-Ff7"/>
+                                    <constraint firstItem="3fa-xc-grw" firstAttribute="leading" secondItem="ggd-PG-7FD" secondAttribute="leading" constant="20" id="efE-Ub-uvY"/>
+                                    <constraint firstItem="R4T-t0-agL" firstAttribute="top" secondItem="H67-JO-HA3" secondAttribute="bottom" constant="20" id="elD-h0-Gfm"/>
+                                    <constraint firstItem="R4T-t0-agL" firstAttribute="leading" secondItem="3fa-xc-grw" secondAttribute="leading" id="gKG-Oc-hfk"/>
+                                    <constraint firstItem="QVk-vt-b3l" firstAttribute="leading" secondItem="R4T-t0-agL" secondAttribute="trailing" constant="25" id="jeM-lO-sA1"/>
+                                    <constraint firstItem="H67-JO-HA3" firstAttribute="top" secondItem="E85-y5-GhC" secondAttribute="bottom" constant="20" id="r8G-OM-Fev"/>
+                                    <constraint firstAttribute="trailing" secondItem="H67-JO-HA3" secondAttribute="trailing" id="tBW-JE-Cz7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mED-nU-d58"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ggd-PG-7FD" firstAttribute="leading" secondItem="mED-nU-d58" secondAttribute="leading" id="5qM-Oy-1hN"/>
+                            <constraint firstItem="mED-nU-d58" firstAttribute="trailing" secondItem="ggd-PG-7FD" secondAttribute="trailing" id="F7n-OL-KSm"/>
+                            <constraint firstItem="ggd-PG-7FD" firstAttribute="top" secondItem="mED-nU-d58" secondAttribute="top" id="NY9-21-S6Y"/>
+                            <constraint firstItem="mED-nU-d58" firstAttribute="bottom" secondItem="ggd-PG-7FD" secondAttribute="bottom" id="hTn-4q-kS3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FgA-81-Zai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="-93"/>
+            <point key="canvasLocation" x="976.81159420289862" y="-93.080357142857139"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="uLs-wa-kDl">
@@ -50,7 +115,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcz-1M-Piz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcz-1M-Piz" customClass="GradientView" customModule="app_smack" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIk-25-8Xm">
@@ -99,6 +164,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="menuProfileIcon" width="99" height="99"/>
         <image name="smackBurger" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
