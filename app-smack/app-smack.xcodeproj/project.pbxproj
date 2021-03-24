@@ -18,6 +18,7 @@
 		B92C7CB2260B494D001B38E2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92C7CB1260B494D001B38E2 /* GradientView.swift */; };
 		B92C7CB6260B7104001B38E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92C7CB5260B7103001B38E2 /* Constants.swift */; };
 		B92C7CBA260B75EA001B38E2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92C7CB9260B75EA001B38E2 /* LoginVC.swift */; };
+		B92C7CBD260B7CA7001B38E2 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92C7CBC260B7CA7001B38E2 /* CreateAccountVC.swift */; };
 		FA0FB99B69A26EFC46E76F2C /* Pods_app_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE66F7259E67FED53909301 /* Pods_app_smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		B92C7CB1260B494D001B38E2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B92C7CB5260B7103001B38E2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B92C7CB9260B75EA001B38E2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B92C7CBC260B7CA7001B38E2 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				B92C7CA8260B3584001B38E2 /* ChatVC.swift */,
 				B92C7CAB260B3594001B38E2 /* ChannelVC.swift */,
 				B92C7CB9260B75EA001B38E2 /* LoginVC.swift */,
+				B92C7CBC260B7CA7001B38E2 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				B92C7CBA260B75EA001B38E2 /* LoginVC.swift in Sources */,
 				B92C7CB2260B494D001B38E2 /* GradientView.swift in Sources */,
 				B92C7C80260B2072001B38E2 /* SceneDelegate.swift in Sources */,
+				B92C7CBD260B7CA7001B38E2 /* CreateAccountVC.swift in Sources */,
 				B92C7CB6260B7104001B38E2 /* Constants.swift in Sources */,
 				B92C7CA2260B31BB001B38E2 /* SWRevealViewController.m in Sources */,
 				B92C7CAC260B3594001B38E2 /* ChannelVC.swift in Sources */,
